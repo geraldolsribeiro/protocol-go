@@ -70,10 +70,10 @@ $ protocol "Source:16,TTL:8,Reserved:40"
 |                           Reserved                            |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-* Source (16 bytes)
-* TTL (8 bytes)
-* Reserved (40 bytes)
-total 64 bytes
+* Source (16 bits)
+* TTL (8 bits)
+* Reserved (40 bits)
+total 64 bits
 ``` 
  
 ``` 
@@ -86,10 +86,10 @@ $ protocol "Source:16,Reserved:40,TTL:8"
 |                   Reserved                    |      TTL      |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-* Source (16 bytes)
-* Reserved (40 bytes)
-* TTL (8 bytes)
-total 64 bytes
+* Source (16 bits)
+* Reserved (40 bits)
+* TTL (8 bits)
+total 64 bits
 ``` 
  
 ``` 
@@ -108,9 +108,9 @@ $ protocol "Reserved:32,Target Address:128"
 |                                                               |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-* Reserved (32 bytes)
-* Target Address (128 bytes)
-total 160 bytes
+* Reserved (32 bits)
+* Target Address (128 bits)
+total 160 bits
 ``` 
 
 ```
@@ -183,17 +183,17 @@ $ protocol tcp
 |                    Options                    |    Padding    |
 +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
 
-* Source Port (16 bytes)
-* Destination Port (16 bytes)
-* Sequence Number (32 bytes)
-* Acknowledgment Number (32 bytes)
-* Offset (4 bytes)
-* Res. (4 bytes)
-* Flags (8 bytes)
-* Window (16 bytes)
-* Checksum (16 bytes)
-* Urgent Pointer (16 bytes)
-* Options (24 bytes)
-* Padding (8 bytes)
-total 192 bytes
+* Source Port (16 bits)
+* Destination Port (16 bits)
+* Sequence Number (32 bits)
+* Acknowledgment Number (32 bits)
+* Offset (4 bits)
+* Res. (4 bits)
+* Flags (8 bits)
+* Window (16 bits)
+* Checksum (16 bits)
+* Urgent Pointer (16 bits)
+* Options (24 bits)
+* Padding (8 bits)
+total 192 bits
 ```
